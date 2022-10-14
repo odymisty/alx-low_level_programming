@@ -3,7 +3,15 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Check if number is negative or positive
+ *
+ * Decription: The program assigns random number to n each time
+ * it is executed and determine if it is positive or negative.
+ *
+ * Return: Return 0 (success)
+ */
+
 int main(void)
 {
 	int n;
