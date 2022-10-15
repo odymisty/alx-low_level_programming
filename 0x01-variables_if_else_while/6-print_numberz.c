@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-/***
+/**
  * main - print single digit
  *
  * Description - Print digit with putchar function
  *
- *
- * Return: Always 0 (success)
- *
- *
+ * Return: Always 0 (success)*
  */
 int main(void)
 {
@@ -20,6 +17,5 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-
 }
 
