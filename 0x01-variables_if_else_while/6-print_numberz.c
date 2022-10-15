@@ -3,7 +3,7 @@
 /***
  * main - print single digit
  *
- * Description: Print digit with putchar function
+ * Description - Print digit with putchar function
  *
  *
  * Return: Always 0 (success)
