@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-/**
- *
+/***
  * main - print single digit
  *
  * Description: Print digit with putchar function
@@ -17,7 +16,7 @@ int main(void)
 
 	for (x = 0; x < 10; x++)
 		putchar(x);
-	putchar('\n');
+		putchar('\n');
 
 	return (0);
 
