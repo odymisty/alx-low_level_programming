@@ -34,8 +34,8 @@ int main(void)
 		{
 			for (c = 2; c <= 9; c++)
 			{
-				if (abc % 10 == 0)
-					continue;
+			//	if (abc % 10 == 0)
+			//		continue;
 				putchar(a + '0');
 				putchar(b + '0');
 				putchar(c + '0');
