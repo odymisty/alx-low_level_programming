@@ -16,8 +16,8 @@ int main(void)
 		for (b = 0; b <= 9; b++)
 		{
 			for (d = 0; d <= 9; d++)
-			{		
-				if ((a != b && a != d && b != d ) && (a < b && b < d))
+			{
+				if ((a != b && a != d && b != d) && (a < b && b < d))
 				{
 
 					putchar(a + '0');
@@ -25,9 +25,10 @@ int main(void)
 					putchar(d + '0');
 
 					if (a != 7 || b != 8 || d != 9)
-				
-					putchar(',');
-					putchar(' ');
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
