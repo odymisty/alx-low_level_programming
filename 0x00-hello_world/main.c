@@ -7,5 +7,6 @@
  */
 int main(void)
 {
+	printf ("%d", 2==1);
 	return (0);
 }
