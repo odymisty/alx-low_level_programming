@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print different combination of two digits
+ * main - print all possible combination of two, two digits
  *
  * Description: Using for loop to print combination of numbers
  *
@@ -9,23 +9,40 @@
  */
 int main(void)
 {
-        int d, e;
+	int d, e, f, g, h, i;
 
-        for (d = 1; d < 100; d++)
-        {
-                if (d % 10 == 0) //|| d % 11 == 0 || ((int)(d % 10 * 10) + d / 10) < d)
-                        continue;
-                e = d / 10;
-                putchar(e + '0');
-                putchar(d % 10 + '0');
+	for (d = 0; d <= 9; d++)
+	{
+		for (e = 0; e <= 9; e++)
+		{
+			for (f = 0; f <= 9; f++)
+			{
+				for (g = 0; g <= 9; g++)
+				{
+					h = (d * 10) + e;
+					i = (f * 10) + g;
 
-                if (d != 99)
-                {
-                        putchar(',');
-                        putchar(' ');
-                }
-        }
-        putchar('\n');
+					if (h < i)
+					{
+						putchar(d + '0');
+						putchar(e + '0');
+						putchar(' ');
+						putchar(f + '0');
+						putchar(g + '0');
 
-        return (0);
+						if (e == 9 && f == 8 || g == 9 || h == 9)
+							break;
+						{
+							putchar(',');
+							putchar(' ');
+						}
+					}
+				}
+			}
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
 }
