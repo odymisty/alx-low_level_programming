@@ -30,7 +30,7 @@ int main(void)
 						putchar(f + '0');
 						putchar(g + '0');
 
-						if (e == 9 && f == 8 || g == 9 || h == 9)
+						if (e == 9 && f == 8 && g == 9 && h == 9)
 							break;
 						{
 							putchar(',');
