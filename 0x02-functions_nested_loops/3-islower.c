@@ -2,6 +2,8 @@
 /**
  * _islower - prints the alphabet in lower cases
  *
+ * @c: an alphabet
+ *
  * Return: 1 if lowercase and 0 if not
  */
 
