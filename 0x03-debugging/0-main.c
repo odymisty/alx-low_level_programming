@@ -12,4 +12,4 @@ int main(void)
         postitive_or_negative(i);
 
         return (0);
-}}
+}
