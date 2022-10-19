@@ -1,8 +1,23 @@
 #include <stdio.h>
-#include "main.h"
+
+void print_numbers(int);
 
 /**
- * print_numbers - compute the sum of multiples of 5 and 3
+ * main - calls print_numbers function
+ *
+ * Return: returns 0
+ */
+int main(void)
+{
+	int n = 1024;
+
+	print_numbers(n);
+
+	return (0);
+}
+
+/**
+ * print_numbers - prints the sum of multiples of 5 and 3
  * @i: number to be checked
  *
  * Return: returns nothing
