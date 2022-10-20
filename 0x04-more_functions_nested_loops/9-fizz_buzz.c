@@ -11,9 +11,6 @@ int main(void)
 
 	for (a = 1; a <= 100; a++)
 	{
-		if (a < 100)
-			printf(" ");
-
 		if (a % 3 == 0)
 		{
 			printf("Fizz");
@@ -30,6 +27,9 @@ int main(void)
 		{
 			printf("%d ", a);
 		}
+
+		if (a < 100)
+                        printf(" ");
 	}
 
 	printf("\n");
