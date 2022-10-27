@@ -14,4 +14,4 @@ char *_strncpy(char *dest, char *src, int n)
 	char *val = strncpy(dest, src, n);
 
 	return (val);
-}}
+}
