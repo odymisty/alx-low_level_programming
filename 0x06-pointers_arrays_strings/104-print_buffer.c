@@ -2,44 +2,45 @@
 #include <stdio.h>
 
 /**
- * print_buffer - Prints a buffer 10 bytes at a time, starting with
- *                the byte position, then showing the hex content,
- *                then displaying printable charcaters.
- * @b: The buffer to be printed.
- * @size: The number of bytes to be printed from the buffer.
+ * print_buffer - prints a buffer
+ * @b: the buffer
+ * @size: size of buffer
+ *
+ * Return: void
  */
-
 void print_buffer(char *b, int size)
 {
-	int byte, index;
+	int i, j, k;
 
-	for (byte = 0; byte < size; byte += 10)
+	for (i = 0; i < size; i = i + 10)
 	{
-		printf("%08x: ", byte);
+		printf("%08x:", i);
 
-		for (index = 0; index < 10; index++)
+		for (j = 0; k < 10; k++)
 		{
-			if ((index + byte) >= size)
-				printf("  ");
+			if (j + i >= size)
+				printf(" ");
 			else
-				printf("%02x", *(b + index + byte));
-			if ((index % 2) != 0 && index != 0)
+				printf("%02x", b[i + j]);
+			if (j % 2 != 0 && j != 0)
 				printf(" ");
 		}
-		for (index = 0; index < 10; index++)
+
+		for (k = 0; k < 10; k++)
 		{
-			if ((index + byte) >= size)
+			if (k + i >= size)
 				break;
-			else if (*(b + index + byte) >= 31 &&
-				 *(b + index + byte) <= 126)
-				printf("%c", *(b + index + byte));
+			if (b[i + k] > 32 || b[i + k] < 127)
+				printf("%c", b[i + k]);
 			else
 				printf(".");
 		}
-		if (byte >= size)
+		if (i >= size)
 			continue;
+
 		printf("\n");
 	}
+
 	if (size <= 0)
 		printf("\n");
-}}
+}
